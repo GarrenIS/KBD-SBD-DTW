@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BantuKasir Design System">
+    <title>BantuKasir — Design System</title>
+    <link rel="stylesheet" href="assets/css/designsystem-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+    <header class="primer-header" id="app-header">
+        <div style="display:flex;align-items:center;gap:12px;">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu"></button>
+            <div class="logo" style="display:flex;align-items:center;gap:10px;">
+                <img src="assets/image/logo-bantukasir-no-text.png" alt="BantuKasir Logo"
+                    style="height:36px;width:36px;object-fit:contain;border-radius:8px;">
+                <span style="font-size:18px;font-weight:700;color:#10b981;letter-spacing:-0.3px;">BantuKasir</span>
+            </div>
+        </div>
+        <nav>
+            <div class="header-search">
+                <input type="text" placeholder="Cari komponen…" id="searchInput" aria-label="Search components">
+            </div>
+
+            <div class="user-profile" title="User profile">S</div>
+        </nav>
+    </header>
+
+    <div class="primer-shell">
+        <aside class="primer-sidebar" id="sidebar">
+            <ul class="nav-list">
+                <li class="nav-item active" data-target="section-overview">
+                    Overview
+                </li>
+            </ul>
+            <div class="sidebar-section-title" id="title-foundation">
+                Foundation <i class="fas fa-chevron-down section-chevron"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item" data-target="section-colors">
+                    Color and Branding
+                </li>
+                <li class="nav-item" data-target="section-typography">
+                    Typography
+                </li>
+                <li class="nav-item" data-target="section-icons">
+                    Icon
+                </li>
+            </ul>
+            <div class="sidebar-section-title" id="title-komponen">
+                Komponen <i class="fas fa-chevron-down section-chevron"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item" data-target="section-buttons">
+                    Button
+                </li>
+                <li class="nav-item" data-target="section-cards">
+                    Card
+                </li>
+                <li class="nav-item" data-target="section-table">
+                    Table
+                </li>
+                <li class="nav-item" data-target="section-tabs-nav">
+                    Tabs & Navigation
+                </li>
+            </ul>
+            <div class="sidebar-section-title" id="title-patterns">
+                Layout <i class="fas fa-chevron-down section-chevron"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item" data-target="section-layout-main">
+                    Main Content
+                </li>
+                <li class="nav-item" data-target="section-layout-responsives">
+                    Responsives
+                </li>
+            </ul>
+        </aside>
+        <main class="primer-main" id="mainContent">
+            <div class="primer-main-container">
+                <section class="ds-section" id="section-overview">
+                    <div class="content-header">
+                        <div>
+                            <h1>Design System</h1>
+                            <p class="subtitle">Sebuah panduan visual lengkap yang berisi komponen-komponen UI dan pola
+                                fungsional dari komponen-komponen tersebut yang minimalis, konsisten, dan mudah dipahami
+                                untuk semua orang.</p>
+                        </div>
+                    </div>
+                    <div class="ds-category-grid">
+                        <div class="ds-category-card" data-category="foundation">
+                            <div class="ds-category-card__content">
+                                <h3>Foundation</h3>
+                                <p>Dasar-dasar visual: warna, tipografi, ikon, gerakan, responsivitas, dan identitas
+                                    brand.</p>
+                                <span class="ds-category-card__count">3 Bagian</span>
+                            </div>
+                        </div>
+                        <div class="ds-category-card" data-category="komponen">
+                            <div class="ds-category-card__content">
+                                <h3>Komponen</h3>
+                                <p>Elemen UI yang dapat digunakan ulang: tombol, formulir, kartu, tabel, dan
+                                    lainnya.
+                                </p>
+                                <span class="ds-category-card__count">4 Elemen</span>
+                            </div>
+                        </div>
+                        <div class="ds-category-card" data-category="patterns">
+                            <div class="ds-category-card__icon"></div>
+                            <div class="ds-category-card__content">
+                                <h3>Layout</h3>
+                                <p>Struktur penempatan elemen dan adaptasi responsif di seluruh aplikasi.</p>
+                                <span class="ds-category-card__count">2 Bagian</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <div class="ds-category-banner" id="category-foundation">
+                    <div>
+                        <h2 class="ds-category-banner__title">Foundation</h2>
+                        <p class="ds-category-banner__desc">Fondasi visual yang menjadi dasar seluruh sistem desain.</p>
+                    </div>
+                </div>
+                <section class="ds-section" id="section-colors">
+                    <h2 class="ds-section-title">Color & Branding</h2>
+                    <p class="ds-section-desc">Warna sebagai identitas khas yang dari brand, yang lebih mudah untuk
+                        dikenali oleh User.</p>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Emerald — Aksen Utama</h3>
+                        <div class="color-palette">
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#ecfdf5"></div>
+                                <div class="swatch-label">100</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#d1fae5"></div>
+                                <div class="swatch-label">200</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#34d399"></div>
+                                <div class="swatch-label">400</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#10b981"></div>
+                                <div class="swatch-label">500 ★</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#059669"></div>
+                                <div class="swatch-label">600</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#047857"></div>
+                                <div class="swatch-label">700</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Amber — Secondary & Accent</h3>
+                        <div class="color-palette">
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#fef3c7"></div>
+                                <div class="swatch-label">100</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#fbbf24"></div>
+                                <div class="swatch-label">400</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#f59e0b"></div>
+                                <div class="swatch-label">500</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#d97706"></div>
+                                <div class="swatch-label">600</div>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-fill" style="background:#f97316"></div>
+                                <div class="swatch-label">Warm</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Warna Semantik</h3>
+                        <div class="semantic-color-grid">
+                            <div class="semantic-color-item">
+                                <div class="semantic-color-item__swatches">
+                                    <div style="background:#e6f7f1;width:40px;height:40px;border-radius:8px;"></div>
+                                    <div style="background:#12805c;width:40px;height:40px;border-radius:8px;"></div>
+                                </div>
+                                <div class="semantic-color-item__info">
+                                    <strong>Success</strong><br>
+                                    <span class="body-sm text-secondary">Berhasil, aktif, tersedia</span>
+                                </div>
+                            </div>
+                            <div class="semantic-color-item">
+                                <div class="semantic-color-item__swatches">
+                                    <div style="background:#fdecec;width:40px;height:40px;border-radius:8px;"></div>
+                                    <div style="background:#d93036;width:40px;height:40px;border-radius:8px;"></div>
+                                </div>
+                                <div class="semantic-color-item__info">
+                                    <strong>Danger</strong><br>
+                                    <span class="body-sm text-secondary">Error, hapus, bahaya</span>
+                                </div>
+                            </div>
+                            <div class="semantic-color-item">
+                                <div class="semantic-color-item__swatches">
+                                    <div style="background:#fff4e6;width:40px;height:40px;border-radius:8px;"></div>
+                                    <div style="background:#da7b11;width:40px;height:40px;border-radius:8px;"></div>
+                                </div>
+                                <div class="semantic-color-item__info">
+                                    <strong>Warning</strong><br>
+                                    <span class="body-sm text-secondary">Peringatan, perhatian</span>
+                                </div>
+                            </div>
+                            <div class="semantic-color-item">
+                                <div class="semantic-color-item__swatches">
+                                    <div style="background:#e6f2ff;width:40px;height:40px;border-radius:8px;"></div>
+                                    <div style="background:#0265dc;width:40px;height:40px;border-radius:8px;"></div>
+                                </div>
+                                <div class="semantic-color-item__info">
+                                    <strong>Informative</strong><br>
+                                    <span class="body-sm text-secondary">Info, tips, panduan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Logo</h3>
+                        <div class="showcase-box">
+                            <div style="display:flex;justify-content:center;align-items:center;padding:24px 16px;">
+                                <img src="assets/image/logo-bantukasir-no-text.png" alt="Logo BantuKasir"
+                                    style="max-width:160px;max-height:160px;width:auto;height:auto;object-fit:contain;border-radius:16px;">
+                            </div>
+                            <p class="body-sm text-secondary"
+                                style="text-align:center;margin-top:4px;margin-bottom:12px;">Logo utama BantuKasir —
+                                digunakan tanpa teks di komponen ikon</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="ds-divider">
+                <section class="ds-section" id="section-typography">
+                    <h2 class="ds-section-title">Typography</h2>
+                    <p class="ds-section-desc">Menggunakan font <strong>Sora</strong> untuk heading hingga subjudul, dan
+                        <strong>Plus Jakarta Sans</strong> untuk teks paragraf hingga detail. Sistem tipografi mencakup
+                        heading, body, dan detail text untuk hirarki informasi yang jelas.
+                    </p>
+
+                    <div style="overflow-x: auto; background: #fff; border: 1px solid var(--color-border); padding: 0;">
+                        <table class="typography-table">
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Role (Token)</th>
+                                    <th>Size</th>
+                                    <th>Line Height</th>
+                                    <th>Weight</th>
+                                    <th>Visual Preview</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong style="font-size: 18px;">D1</strong></td>
+                                    <td><span style="font-weight: 600;">Display/Sora-60-<br>Bold</span></td>
+                                    <td>60px</td>
+                                    <td>72px</td>
+                                    <td><strong>Bold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 60px; font-weight: 700; line-height: 72px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H1</strong></td>
+                                    <td>Heading/H1-40-<br>Bold</td>
+                                    <td>40px</td>
+                                    <td>48px</td>
+                                    <td><strong>Bold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 700; line-height: 48px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H2</strong></td>
+                                    <td>Heading/H2-32-<br>Bold</td>
+                                    <td>32px</td>
+                                    <td>38.4px</td>
+                                    <td><strong>Bold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 32px; font-weight: 700; line-height: 38.4px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H3</strong></td>
+                                    <td>Heading/H3-24-<br>SemiBold</td>
+                                    <td>24px</td>
+                                    <td>28.8px</td>
+                                    <td><strong>SemiBold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 600; line-height: 28.8px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H4</strong></td>
+                                    <td>Heading/H4-20-<br>SemiBold</td>
+                                    <td>20px</td>
+                                    <td>24px</td>
+                                    <td><strong>SemiBold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 600; line-height: 24px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H5</strong></td>
+                                    <td>Heading/H5-16-<br>SemiBold</td>
+                                    <td>16px</td>
+                                    <td>20px</td>
+                                    <td><strong>SemiBold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 600; line-height: 20px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">H6</strong></td>
+                                    <td>Heading/H6-12-<br>SemiBold</td>
+                                    <td>12px</td>
+                                    <td>16px</td>
+                                    <td><strong>SemiBold</strong></td>
+                                    <td><span
+                                            style="font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 600; line-height: 16px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">P/L</strong></td>
+                                    <td>Paragraph/Large</td>
+                                    <td>18px</td>
+                                    <td>21.6px</td>
+                                    <td>Regular</td>
+                                    <td><span
+                                            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 400; line-height: 21.6px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="font-size: 16px;">P/M</strong></td>
+                                    <td>Paragraph/Medium</td>
+                                    <td>16px</td>
+                                    <td>19.2px</td>
+                                    <td>Regular</td>
+                                    <td><span
+                                            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 19.2px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap;"><strong style="font-size: 16px;">L/M</strong></td>
+                                    <td>Label/Medium</td>
+                                    <td>12px</td>
+                                    <td>14.4px</td>
+                                    <td>Medium</td>
+                                    <td><span
+                                            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 500; text-transform: uppercase; line-height: 14.4px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap;"><strong style="font-size: 16px;">L/S</strong></td>
+                                    <td>Label/Small</td>
+                                    <td>10px</td>
+                                    <td>12px</td>
+                                    <td>Medium</td>
+                                    <td><span
+                                            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; font-weight: 500; text-transform: uppercase; line-height: 12px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap;"><strong style="font-size: 16px;">L/XS</strong></td>
+                                    <td>Label/Extra Small</td>
+                                    <td>8px</td>
+                                    <td>9.6px</td>
+                                    <td>Medium</td>
+                                    <td><span
+                                            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 8px; font-weight: 500; text-transform: uppercase; line-height: 9.6px;">the
+                                            lazy fox jump over the brown dog</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <hr class="ds-divider">
+                <section class="ds-section" id="section-icons">
+                    <h2 class="ds-section-title">Icon</h2>
+                    <p class="ds-section-desc">Ikon memberikan petunjuk visual yang cepat dikenali. Dalam sistem ini
+                        menggunakan emoji dan simbol karakter sebagai ikon ringan. Untuk produksi, gunakan library ikon
+                        seperti <strong>Lucide</strong>, <strong>Heroicons</strong>, atau <strong>Material
+                            Symbols</strong>.</p>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Ukuran Ikon</h3>
+                        <div class="showcase-box">
+                            <div class="showcase-row" style="gap:32px;">
+                                <div style="text-align:center;">
+                                    <div class="icon-demo icon-demo--xs"><i class="fa-solid fa-circle-check"></i></div>
+                                    <span class="spacing-block__label">12px · XS</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div class="icon-demo icon-demo--sm"><i class="fa-solid fa-circle-check"></i></div>
+                                    <span class="spacing-block__label">16px · SM</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div class="icon-demo icon-demo--md"><i class="fa-solid fa-circle-check"></i></div>
+                                    <span class="spacing-block__label">24px · MD</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div class="icon-demo icon-demo--lg"><i class="fa-solid fa-circle-check"></i></div>
+                                    <span class="spacing-block__label">32px · LG</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div class="icon-demo icon-demo--xl"><i class="fa-solid fa-circle-check"></i></div>
+                                    <span class="spacing-block__label">40px · XL</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Set Ikon yang Digunakan</h3>
+                        <div class="showcase-box">
+                            <div class="icon-grid">
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconBox.jpeg" class="icon-grid__img" alt="Box">
+                                    <span class="icon-grid__name">Box</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconCart.jpeg" class="icon-grid__img" alt="Cart">
+                                    <span class="icon-grid__name">Cart</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconCheck.jpeg" class="icon-grid__img" alt="Check">
+                                    <span class="icon-grid__name">Check</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconCRg.jpeg" class="icon-grid__img" alt="CRg">
+                                    <span class="icon-grid__name">Settings</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconDanger.jpeg" class="icon-grid__img" alt="Danger">
+                                    <span class="icon-grid__name">Danger</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconDate.png" class="icon-grid__img" alt="Date">
+                                    <span class="icon-grid__name">Date</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconInsta.jpeg" class="icon-grid__img" alt="Instagram">
+                                    <span class="icon-grid__name">Instagram</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconLinkedIn.jpeg" class="icon-grid__img" alt="LinkedIn">
+                                    <span class="icon-grid__name">LinkedIn</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconMoney.jpeg" class="icon-grid__img" alt="Money">
+                                    <span class="icon-grid__name">Money</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconNote.jpeg" class="icon-grid__img" alt="Note">
+                                    <span class="icon-grid__name">Note</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconPeople.jpeg" class="icon-grid__img" alt="People">
+                                    <span class="icon-grid__name">People</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconRocket.png" class="icon-grid__img" alt="Rocket">
+                                    <span class="icon-grid__name">Rocket</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconShield.jpeg" class="icon-grid__img" alt="Shield">
+                                    <span class="icon-grid__name">Security</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconTiktok.jpeg" class="icon-grid__img" alt="Tiktok">
+                                    <span class="icon-grid__name">Tiktok</span>
+                                </div>
+                                <div class="icon-grid__item">
+                                    <img src="assets/image/iconWA.jpeg" class="icon-grid__img" alt="WA">
+                                    <span class="icon-grid__name">WhatsApp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <section class="ds-section" id="section-branding">
+                    <h2 class="ds-section-title">Branding</h2>
+                    <p class="ds-section-desc">Identitas visual BantuKasir: logo, warna brand, dan panduan penggunaan
+                        untuk menjaga konsistensi brand.</p>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Logo</h3>
+                        <div class="showcase-box">
+                            <div class="brand-logo-showcase">
+                                <div class="brand-logo-card">
+                                    <div class="brand-logo brand-logo--light">
+                                        <span class="logo-icon"
+                                            style="width:48px;height:48px;font-size:24px;border-radius:12px;"></span>
+                                        <span style="font-size:28px;font-weight:700;color:#10b981;">BantuKasir</span>
+                                    </div>
+                                    <span class="body-sm text-secondary">Default — Latar terang</span>
+                                </div>
+                                <div class="brand-logo-card" style="background:#1b1b1b;">
+                                    <div class="brand-logo brand-logo--dark">
+                                        <span class="logo-icon"
+                                            style="width:48px;height:48px;font-size:24px;border-radius:12px;"></span>
+                                        <span style="font-size:28px;font-weight:700;color:#34d399;">BantuKasir</span>
+                                    </div>
+                                    <span class="body-sm" style="color:#888;">Reversed — Latar gelap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ds-subsection">
+                        <h3 class="ds-subsection-title">Warna Brand</h3>
+                        <div class="showcase-box">
+                            <div class="showcase-row" style="gap:24px;">
+                                <div style="text-align:center;">
+                                    <div
+                                        style="width:80px;height:80px;background:#10b981;border-radius:16px;margin-bottom:8px;">
+                                    </div>
+                                    <strong class="body-sm">Primary Emerald</strong><br>
+                                    <span class="code">#10b981</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div
+                                        style="width:80px;height:80px;background:#f59e0b;border-radius:16px;margin-bottom:8px;">
+                                    </div>
+                                    <strong class="body-sm">Accent Amber</strong><br>
+                                    <span class="code">#f59e0b</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div
+                                        style="width:80px;height:80px;background:#1a1a1a;border-radius:16px;margin-bottom:8px;">
+                                    </div>
+                                    <strong class="body-sm">Dark</strong><br>
+                                    <span class="code">#1a1a1a</span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div
+                                        style="width:80px;height:80px;background:#fafafa;border:1px solid #e0e0e0;border-radius:16px;margin-bottom:8px;">
+                                    </div>
+                                    <strong class="body-sm">Light</strong><br>
+                                    <span class="code">#fafafa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <div class="ds-category-banner" id="category-komponen">
+                    <h2 class="ds-category-banner__title">Komponen</h2>
+                    <p class="ds-category-banner__desc">Elemen UI yang dapat digunakan ulang di seluruh aplikasi.
+                    </p>
+                </div>
+            </div>
+
+            <section class="ds-section" id="section-buttons">
+                <h2 class="ds-section-title">Button</h2>
+                <p class="ds-section-desc">Tombol BantuKasir dirancang untuk keseragaman aksi di seluruh aplikasi. Fokus
+                    utama adalah pada konsistensi ukuran dan penggunaan ikon untuk memperjelas konteks navigasi.</p>
+
+                <div class="ds-subsection contoh-penggunaan">
+                    <h3 class="ds-subsection-title">Ukuran</h3>
+                    <p class="body-sm text-secondary mb-3">Tersedia dalam tiga ukuran standar untuk menyesuaikan dengan
+                        kepadatan informasi di layar.</p>
+                    <div class="showcase-box">
+                        <div class="showcase-row" style="gap: 24px; align-items: flex-end;">
+                            <div style="text-align: center;">
+                                <button class="sp-btn sp-btn--accent sp-btn--sm">Small Button</button>
+                                <div class="detail" style="margin-top: 8px;">28px · SM</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="sp-btn sp-btn--accent">Medium Button</button>
+                                <div class="detail" style="margin-top: 8px;">36px · MD</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="sp-btn sp-btn--accent sp-btn--lg">Large Button</button>
+                                <div class="detail" style="margin-top: 8px;">44px · LG</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Dengan Ikon</h3>
+                    <p class="body-sm text-secondary mb-3">Ikon membantu pengguna mengidentifikasi aksi dengan lebih
+                        cepat. Dapat diletakkan sebelum teks atau digunakan untuk navigasi yang lebih intuitif.</p>
+                    <div class="showcase-box">
+                        <div class="showcase-row" style="gap: 20px; align-items: flex-end; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <img src="assets/image/btnNavbar.png" alt="Button dengan ikon - Login dan Coba Gratis"
+                                    style="max-width: 300px; height: auto;">
+                                <div class="detail" style="margin-top: 12px;">For Navigation</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/image/btn_jadwalDemo.png" alt="Button dengan ikon - Jadwalkan Demo"
+                                    style="max-width: 300px; height: auto;">
+                                <div class="detail" style="margin-top: 12px;">For Action</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/image/btn_startDemo.png"
+                                    alt="Button dengan ikon - Mulai Sekarang dan Lihat Demo"
+                                    style="max-width: 300px; height: auto;">
+                                <div class="detail" style="margin-top: 12px;">Primary & Secondary</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Contoh Penggunaan</h3>
+                    <p class="body-sm text-secondary mb-3">Variasi button untuk kategori, filter, dan navigasi di
+                        berbagai konteks penggunaan.</p>
+                    <div class="showcase-box">
+                        <div class="showcase-row compact-carousel">
+                            <div style="text-align: center;">
+                                <img src="assets/image/btnUsaha.png"
+                                    alt="Button kategori usaha - Minimarket, Supermarket, Grocery, dll"
+                                    style="max-width: 100%; height: auto;">
+                                <div class="detail" style="margin-top: 12px;">Button untuk pilihan kategori usaha</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/image/btn_Days.png"
+                                    alt="Button filter periode - 7 Hari, 30 Hari, 3 Bulan"
+                                    style="max-width: 100%; height: auto;">
+                                <div class="detail" style="margin-top: 12px;">Button untuk filter periode</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ds-section" id="section-cards">
+                <h2 class="ds-section-title">Card</h2>
+                <p class="ds-section-desc">Kartu mengelompokkan informasi terkait dengan fokus pada visual yang dominan
+                    dan konsisten.</p>
+
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="sp-card"
+                            style="padding:0; overflow:hidden; display:flex; flex-direction:column; height: 100%; background: var(--color-bg-layer);">
+                            <img src="assets/image/card_Fitur.png" alt="Card Fitur"
+                                style="width:100%; height:320px; display:block; object-fit:contain; background: #f8fafc;">
+                            <div class="sp-card__footer"
+                                style="padding:16px; background: white; border-top: 1px solid var(--color-border);">
+                                <span class="body-sm text-secondary">Card Fitur</span>
+                            </div>
+                        </div>
+                        <div class="sp-card"
+                            style="padding:0; overflow:hidden; display:flex; flex-direction:column; height: 100%; background: var(--color-bg-layer);">
+                            <img src="assets/image/Card_testi.png" alt="Card Testimoni"
+                                style="width:100%; height:320px; display:block; object-fit:contain; background: #f8fafc;">
+                            <div class="sp-card__footer"
+                                style="padding:16px; background: white; border-top: 1px solid var(--color-border);">
+                                <span class="body-sm text-secondary">Card Testimoni</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="sp-card"
+                            style="padding:0; overflow:hidden; display:flex; flex-direction:column; background: var(--color-bg-layer);">
+                            <img src="assets/image/density-showcase.png" alt="Card Live Dashboard"
+                                style="width:100%; height:320px; display:block; object-fit:contain; background: #f8fafc;">
+                            <div class="sp-card__footer"
+                                style="padding:16px; background: white; border-top: 1px solid var(--color-border);">
+                                <span class="body-sm text-secondary">Card Live Dashboard</span>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="ds-divider">
+            <section class="ds-section" id="section-table">
+                <h2 class="ds-section-title">Table</h2>
+                <p class="ds-section-desc">Tabel digunakan untuk menampilkan data terstruktur secara ringkas dan mudah
+                    dipindai. Mendukung berbagai mode: default, hover, dan dengan aksi baris.</p>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Contoh Tabel</h3>
+                    <div class="showcase-box">
+                        <div style="display:flex;justify-content:center;align-items:center;">
+                            <img src="assets/image/Card_table.png" alt="Contoh Tabel BantuKasir"
+                                style="max-width:100%;width:100%;height:auto;display:block;object-fit:contain;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="ds-divider">
+
+            <section class="ds-section" id="section-tabs-nav">
+                <h2 class="ds-section-title">Tabs & Navigation</h2>
+                <p class="ds-section-desc">Komponen navigasi untuk berpindah antar halaman atau konten dalam satu
+                    konteks yang sama.</p>
+
+                <div class="showcase-box">
+                    <div style="display: flex; flex-direction: column; gap: 32px; align-items: center;">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/fullNavbar_2.png"Full Navbar"
+                                style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                            <div class="detail" style="margin-top: 12px;">Full Navbar Structure</div>
+                        </div>
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/btnUsaha.png"Button Usaha"
+                                style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                            <div class="detail" style="margin-top: 12px;">Category Navigation Buttons</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="ds-divider">
+            <div class="ds-category-banner" id="category-patterns">
+                <span class="ds-category-banner__icon">📐</span>
+                <div>
+                    <h2 class="ds-category-banner__title">Layout</h2>
+                    <p class="ds-category-banner__desc">Struktur penempatan elemen dan adaptasi responsif di seluruh
+                        aplikasi.</p>
+                </div>
+            </div>
+
+            <section class="ds-section" id="section-layout-main">
+                <h2 class="ds-section-title">Main Content</h2>
+                <p class="ds-section-desc">Representasi visual dari struktur utama halaman dan tata letak konten yang konsisten.</p>
+
+                <div class="showcase-box">
+                    <div style="display: flex; flex-direction: column; gap: 32px; align-items: center;">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/main-content.png" alt="Main Content Structure"
+                                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                            <div class="detail" style="margin-top: 12px;">Struktur Shell & Konten Utama</div>
+                        </div>
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/MCt_2.png" alt="Main Content Alternative Layout"
+                                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                            <div class="detail" style="margin-top: 12px;">Variasi Tata Letak Elemen Halaman</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="ds-divider">
+
+            <section class="ds-section" id="section-layout-responsives">
+                <h2 class="ds-section-title">Responsives</h2>
+                <p class="ds-section-desc">Adaptasi tata letak dan kepadatan elemen berdasarkan ukuran perangkat dan resolusi layar.</p>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Responsive Breakpoints</h3>
+                    <div class="showcase-box">
+                        <table class="sp-table" style="border:none; width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Nama</th>
+                                    <th>Min-width</th>
+                                    <th>Perilaku</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="sp-badge sp-badge--neutral">Mobile</span></td>
+                                    <td><span class="code">0px</span></td>
+                                    <td>Sidebar tersembunyi, single column, padding kecil</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="sp-badge sp-badge--info">Tablet</span></td>
+                                    <td><span class="code">768px</span></td>
+                                    <td>Sidebar muncul, 2 column grid</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="sp-badge sp-badge--success">Desktop</span></td>
+                                    <td><span class="code">1024px</span></td>
+                                    <td>Full layout, sidebar tetap, multi column</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="sp-badge sp-badge--warning">Wide</span></td>
+                                    <td><span class="code">1440px</span></td>
+                                    <td>Max-width container, konten terpusat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Comfortable</h3>
+                    <p class="body-sm text-secondary mb-3">Digunakan untuk Desktop dengan ruang yang luas dan keterbacaan maksimal.</p>
+                    <div class="showcase-box">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/responsive-desktop.png" alt="Comfortable Layout (Desktop)"
+                                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                            <div class="detail" style="margin-top: 12px;">Comfortable (Desktop) — Spacing: 32px | Gap: 24px</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Compact</h3>
+                    <p class="body-sm text-secondary mb-3">Optimal untuk Tablet atau perangkat dengan layar menengah.</p>
+                    <div class="showcase-box">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/responsive-tablet.png" alt="Compact Layout (Tablet)"
+                                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                            <div class="detail" style="margin-top: 12px;">Compact (Tablet) — Spacing: 16px | Gap: 16px</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ds-subsection">
+                    <h3 class="ds-subsection-title">Tiny</h3>
+                    <p class="body-sm text-secondary mb-3">Khusus untuk Mobile dengan ruang sangat terbatas, fokus pada elemen kritikal.</p>
+                    <div class="showcase-box">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="assets/image/responsive-mobile.png" alt="Tiny Layout (Mobile)"
+                                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                            <div class="detail" style="margin-top: 12px;">Tiny (Mobile) — Spacing: 8px | Gap: 8px</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="ds-divider">
+
+
+
+            <hr class="ds-divider">
+
+
+
+
+            <footer class="ds-footer">
+                <div class="footer-content">
+                    <p>
+                        <strong>BantuKasir v1.0</strong>
+                        <span style="margin-left: 8px;">® 2026</span>
+                    </p>
+                </div>
+            </footer>
+
+
+
+
+            <script src="assets/js/designsystem-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2079 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BantuKasir - Modern POS System untuk Retail Indonesia</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <div class="promo-bar" id="promoBar">
+      <div class="promo-content">
+        <span class="promo-text">
+          <i class="fas fa-fire"></i>
+          Diskon 50% untuk 100 pendaftar pertama! Berakhir dalam
+          <span class="countdown" id="countdown">23:59:59</span>
+        </span>
+        <button class="promo-close" id="promoClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo-icon-only">
+          <img
+            src="assets/image/logo-bantukasir-no-text.png"
+            alt="BantuKasir"
+            class="nav-logo-img"
+          />
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#pricing">Harga</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li class="dropdown">
+            <a href="#about" class="dropdown-toggle">
+              Tentang
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#team" class="dropdown-item">
+                <i class="fas fa-users"></i>
+                <div>
+                  <span class="dropdown-title">Tim Kami</span>
+                </div>
+              </a>
+              <a href="designsystem.html" class="dropdown-item">
+                <i class="fas fa-palette"></i>
+                <div>
+                  <span class="dropdown-title">Design System</span>
+                </div>
+              </a>
+              <a href="#pos-dashboard" class="dropdown-item">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <span class="dropdown-title">Dashboard</span>
+                </div>
+              </a>
+              <a href="#blog" class="dropdown-item">
+                <i class="fas fa-tv"></i>
+                <div>
+                  <span class="dropdown-title">Blog</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="#testimonials">Testimoni</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary btn-sm">
+            <i class="fas fa-rocket"></i>
+            <a href="#demo"><span class="btn-text">Coba Demo</span></a>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu-header">
+          <img
+            src="assets/image/logo-bantukasir-no-text.png"
+            alt="BantuKasir"
+            class="mobile-logo"
+          />
+          <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#features"><i class="fas fa-star"></i> Fitur</a>
+          </li>
+          <li>
+            <a href="#pricing"><i class="fas fa-tag"></i> Harga</a>
+          </li>
+          <li>
+            <a href="#demo"><i class="fas fa-play-circle"></i> Demo</a>
+          </li>
+          <li>
+            <a href="#business-types"
+              ><i class="fas fa-store"></i> Solusi Bisnis</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials"><i class="fas fa-users"></i> Testimoni</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-carousel">
+        <div
+          class="carousel-slide active"
+          style="
+            background: linear-gradient(
+              135deg,
+              #eff6ff 0%,
+              #f0fdf4 50%,
+              #fffbeb 100%
+            );
+          "
+        >
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                POS System #1 di Indonesia
+              </div>
+              <h1>Kelola Toko Anda dengan <span>Cerdas & Efisien</span></h1>
+              <p>
+                Sistem POS modern untuk supermarket dan minimarket. Kelola stok,
+                transaksi, dan laporan keuangan dalam satu platform
+                terintegrasi.
+              </p>
+              <div class="hero-trust-badges">
+                <span class="trust-badge"
+                  ><i class="fas fa-shield-alt"></i> PCI DSS Certified</span
+                >
+                <span class="trust-badge"
+                  ><i class="fas fa-lock"></i> AES-256 Encryption</span
+                >
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="dashboard-preview">
+                <div class="preview-header">
+                  <span class="preview-title">Dashboard Overview</span>
+                  <span class="preview-badge">Live</span>
+                </div>
+                <div class="preview-stats">
+                  <div class="preview-card">
+                    <div class="preview-card-value">IDR 5.2 Juta</div>
+                    <div class="preview-card-label">Revenue Hari Ini</div>
+                  </div>
+                  <div class="preview-card">
+                    <div class="preview-card-value">142</div>
+                    <div class="preview-card-label">Transaksi</div>
+                  </div>
+                </div>
+                <div class="preview-chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="carousel-slide"
+          style="
+            background: linear-gradient(
+              135deg,
+              #f3e8ff 0%,
+              #e0f2fe 50%,
+              #f0fdf4 100%
+            );
+          "
+        >
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-sync"></i>
+                Real-time Sync
+              </div>
+              <h1>Platform <span>All-in-One</span> untuk Bisnis Retail</h1>
+              <p>
+                Mulai dari minimarket hingga supermarket besar, Bantukasir siap
+                menemani pertumbuhan bisnis Anda dengan teknologi terkini.
+              </p>
+              <div class="hero-trust-badges">
+                <span class="trust-badge"
+                  ><i class="fas fa-shield-alt"></i> PCI DSS Certified</span
+                >
+                <span class="trust-badge"
+                  ><i class="fas fa-lock"></i> AES-256 Encryption</span
+                >
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="dashboard-preview">
+                <div class="preview-header">
+                  <span class="preview-title">Multi-Outlet</span>
+                  <span class="preview-badge">Pro</span>
+                </div>
+                <div class="preview-stats">
+                  <div class="preview-card">
+                    <div class="preview-card-value">12</div>
+                    <div class="preview-card-label">Cabang Aktif</div>
+                  </div>
+                  <div class="preview-card">
+                    <div class="preview-card-value">98%</div>
+                    <div class="preview-card-label">Sinkronisasi</div>
+                  </div>
+                </div>
+                <div
+                  class="preview-chart"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #e0f2fe 0%,
+                      #f3e8ff 100%
+                    );
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="carousel-slide"
+          style="
+            background: linear-gradient(
+              135deg,
+              #fef3c7 0%,
+              #fce7f3 50%,
+              #e0e7ff 100%
+            );
+          "
+        >
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-brain"></i>
+                AI-Powered
+              </div>
+              <h1>Analitik <span>Real-Time</span> & Lengkap</h1>
+              <p>
+                Pantau performa bisnis kapan saja, di mana saja. Dapatkan
+                insight mendalam untuk pengambilan keputusan yang lebih baik.
+              </p>
+              <div class="hero-trust-badges">
+                <span class="trust-badge"
+                  ><i class="fas fa-shield-alt"></i> PCI DSS Certified</span
+                >
+                <span class="trust-badge"
+                  ><i class="fas fa-lock"></i> AES-256 Encryption</span
+                >
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="dashboard-preview">
+                <div class="preview-header">
+                  <span class="preview-title">Analytics</span>
+                  <span class="preview-badge">AI</span>
+                </div>
+                <div class="preview-stats">
+                  <div class="preview-card">
+                    <div class="preview-card-value">+45%</div>
+                    <div class="preview-card-label">Growth</div>
+                  </div>
+                  <div class="preview-card">
+                    <div class="preview-card-value">2.4k</div>
+                    <div class="preview-card-label">Pelanggan</div>
+                  </div>
+                </div>
+                <div
+                  class="preview-chart"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #fce7f3 0%,
+                      #fef3c7 100%
+                    );
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow carousel-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-arrow carousel-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="hero-fixed-content">
+        <div class="hero-fixed-inner">
+          <div class="hero-controls">
+            <div class="hero-buttons">
+              <button class="btn btn-primary btn-large" id="btnCobaGratis">
+                <i class="fas fa-tag"></i>
+                <a href="#pricing">Mulai Sekarang</a>
+              </button>
+              <button class="btn btn-secondary btn-large" id="btnLihatDemo">
+                <i class="fas fa-video"></i>
+                <a href="#demo">Live Demo</a>
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Toko Aktif</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="1000000">0</span>
+                <span class="stat-label">Transaksi</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="99.9">0</span>
+                <span class="stat-label">Uptime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-dots-container">
+        <div class="carousel-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-carousel-section">
+      <div class="section-container">
+        <div class="section-header store-header">
+          <span class="section-tag">Trusted By</span>
+          <h2 class="section-title">Dipercaya oleh Ratusan Bisnis Retail</h2>
+        </div>
+        <div class="store-carousel-wrapper">
+          <div class="store-carousel-track">
+            <div class="store-logo"><span>Minimart Sejahtera</span></div>
+            <div class="store-logo"><span>Super Indo Express</span></div>
+            <div class="store-logo"><span>Fresh Market 24</span></div>
+            <div class="store-logo"><span>Grosir Makmur</span></div>
+            <div class="store-logo"><span>Mart Ceria</span></div>
+            <div class="store-logo"><span>Daily Shop</span></div>
+            <div class="store-logo"><span>Happy Mart</span></div>
+            <div class="store-logo"><span>Family Store</span></div>
+            <div class="store-logo"><span>Minimart Sejahtera</span></div>
+            <div class="store-logo"><span>Super Indo Express</span></div>
+            <div class="store-logo"><span>Fresh Market 24</span></div>
+            <div class="store-logo"><span>Grosir Makmur</span></div>
+            <div class="store-logo"><span>Mart Ceria</span></div>
+            <div class="store-logo"><span>Daily Shop</span></div>
+            <div class="store-logo"><span>Happy Mart</span></div>
+            <div class="store-logo"><span>Family Store</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-types" id="business-types">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Jenis Usaha</span>
+          <h2 class="section-title">Cocok untuk Berbagai Bisnis</h2>
+          <p class="section-subtitle">
+            Solusi lengkap untuk berbagai skala dan jenis usaha retail
+          </p>
+        </div>
+
+        <div class="business-tabs">
+          <button class="business-tab active" data-business="minimarket">
+            <i class="fas fa-store"></i>
+            Minimarket
+          </button>
+          <button class="business-tab" data-business="supermarket">
+            <i class="fas fa-shopping-cart"></i>
+            Supermarket
+          </button>
+          <button class="business-tab" data-business="grocery">
+            <i class="fas fa-apple-alt"></i>
+            Grocery
+          </button>
+          <button class="business-tab" data-business="retail">
+            <i class="fas fa-tshirt"></i>
+            Retail Shop
+          </button>
+          <button class="business-tab" data-business="warehouse">
+            <i class="fas fa-warehouse"></i>
+            Warehouse
+          </button>
+        </div>
+
+        <div class="business-content active" id="minimarket">
+          <div class="business-grid">
+            <div class="business-info">
+              <h3>Minimarket Modern</h3>
+              <p>
+                Solusi ringan dan cepat untuk minimarket dengan transaksi
+                tinggi. Fitur unggulan: scanning cepat, manajemen stok otomatis,
+                dan laporan harian real-time.
+              </p>
+              <ul class="business-features">
+                <li><i class="fas fa-check-circle"></i> Scan barcode instan</li>
+                <li><i class="fas fa-check-circle"></i> Stok minimum alert</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Multi-payment gateway
+                </li>
+              </ul>
+              <button class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+            <div class="business-image">
+              <div class="business-illustration minimarket-illustration">
+                <div class="store-shapes mini-store">
+                  <div class="mini-roof"></div>
+                  <div class="mini-sign">MINIMART</div>
+                  <div class="mini-body">
+                    <div class="mini-window"></div>
+                    <div class="mini-door"></div>
+                  </div>
+                  <div class="mini-trolley">
+                    <div class="trolley-basket"></div>
+                    <div class="trolley-wheel wheel-l"></div>
+                    <div class="trolley-wheel wheel-r"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-content" id="supermarket">
+          <div class="business-grid">
+            <div class="business-info">
+              <h3>Supermarket Skala Besar</h3>
+              <p>
+                Manajemen multi-cabang dengan sinkronisasi real-time. Integrasi
+                dengan sistem ERP dan akuntansi untuk operasional enterprise.
+              </p>
+              <ul class="business-features">
+                <li><i class="fas fa-check-circle"></i> Multi-branch sync</li>
+                <li><i class="fas fa-check-circle"></i> ERP Integration</li>
+                <li><i class="fas fa-check-circle"></i> Advanced analytics</li>
+              </ul>
+              <button class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+            <div class="business-image">
+              <div class="business-illustration supermarket-illustration">
+                <div class="store-shapes super-store">
+                  <div class="super-roof">SUPERMARKET</div>
+                  <div class="super-body">
+                    <div class="super-glass">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="super-entrance"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-content" id="grocery">
+          <div class="business-grid">
+            <div class="business-info">
+              <h3>Grocery & Sayur</h3>
+              <p>
+                Manajemen produk segar dengan fitur tracking kadaluarsa.
+                Timbangan digital integration untuk penjualan sayur dan buah.
+              </p>
+              <ul class="business-features">
+                <li><i class="fas fa-check-circle"></i> Expiry tracking</li>
+                <li><i class="fas fa-check-circle"></i> Scale integration</li>
+                <li><i class="fas fa-check-circle"></i> Fresh alerts</li>
+              </ul>
+              <button class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+            <div class="business-image">
+              <div class="business-illustration grocery-illustration">
+                <div class="grocery-scene">
+                  <div class="grocery-basket">
+                    <div class="grocery-handle"></div>
+                    <div class="grocery-items">
+                      <div class="grocery-item red"></div>
+                      <div class="grocery-item orange"></div>
+                      <div class="grocery-item green"></div>
+                    </div>
+                  </div>
+                  <div class="grocery-leaf leaf-1"></div>
+                  <div class="grocery-leaf leaf-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-content" id="retail">
+          <div class="business-grid">
+            <div class="business-info">
+              <h3>Retail Shop</h3>
+              <p>
+                Fashion, elektronik, atau toko serba ada. Fitur variant produk
+                (ukuran, warna) dan manajemen promo yang fleksibel.
+              </p>
+              <ul class="business-features">
+                <li><i class="fas fa-check-circle"></i> Variant management</li>
+                <li><i class="fas fa-check-circle"></i> Dynamic pricing</li>
+                <li><i class="fas fa-check-circle"></i> Customer loyalty</li>
+              </ul>
+              <button class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+            <div class="business-image">
+              <div class="business-illustration retail-illustration">
+                <div class="retail-boutique">
+                  <div class="retail-roof"></div>
+                  <div class="retail-body">
+                    <div class="retail-display">
+                      <div class="shirt-shirt">
+                        <div class="shirt-hanger"></div>
+                      </div>
+                      <div class="shirt-shirt blue-shirt">
+                        <div class="shirt-hanger"></div>
+                      </div>
+                    </div>
+                    <div class="retail-counter"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-content" id="warehouse">
+          <div class="business-grid">
+            <div class="business-info">
+              <h3>Warehouse & Distribution</h3>
+              <p>
+                Manajemen gudang skala besar dengan batch tracking, FIFO/LIFO,
+                dan integrasi logistik pengiriman.
+              </p>
+              <ul class="business-features">
+                <li><i class="fas fa-check-circle"></i> Batch tracking</li>
+                <li><i class="fas fa-check-circle"></i> FIFO/LIFO support</li>
+                <li><i class="fas fa-check-circle"></i> Logistics API</li>
+              </ul>
+              <button class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+            <div class="business-image">
+              <div class="business-illustration warehouse-illustration">
+                <div class="wh-scene">
+                  <div class="wh-building">
+                    <div class="wh-roof">WAREHOUSE</div>
+                    <div class="wh-door"></div>
+                  </div>
+                  <div class="wh-box box-left">
+                    <div class="box-tape"></div>
+                  </div>
+                  <div class="wh-box box-right">
+                    <div class="box-tape"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Fitur Unggulan</span>
+          <h2 class="section-title">Semua yang Anda Butuhkan</h2>
+          <p class="section-subtitle">
+            Sistem lengkap untuk mengelola bisnis retail Anda dengan efisiensi
+            maksimal
+          </p>
+        </div>
+
+        <div class="features-slider">
+          <div class="features-track">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-cash-register"></i>
+              </div>
+              <h3 class="feature-title">POS Cepat & Intuitif</h3>
+              <p class="feature-desc">
+                Proses transaksi dalam hitungan detik dengan interface yang
+                mudah digunakan. Mendukung barcode scanner dan multiple payment
+                methods.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-boxes"></i></div>
+              <h3 class="feature-title">Manajemen Stok Real-time</h3>
+              <p class="feature-desc">
+                Pantau stok secara otomatis dengan alert ketika inventory
+                menipis. Kelola produk kadaluarsa dengan mudah.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <h3 class="feature-title">Membership System</h3>
+              <p class="feature-desc">
+                Tingkatkan loyalitas pelanggan dengan tier membership (Bronze,
+                Silver, Gold) dan diskon otomatis.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+              <h3 class="feature-title">Laporan Analitik</h3>
+              <p class="feature-desc">
+                Dashboard interaktif dengan insight penjualan, produk terlaris,
+                dan performa karyawan.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-truck"></i></div>
+              <h3 class="feature-title">Multi Supplier</h3>
+              <p class="feature-desc">
+                Kelola banyak supplier untuk satu produk dengan harga beli yang
+                berbeda. Lacak riwayat pembelian.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="feature-title">Keamanan Data</h3>
+              <p class="feature-desc">
+                Sistem role-based access control dengan enkripsi data. Backup
+                otomatis ke cloud.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-cash-register"></i>
+              </div>
+              <h3 class="feature-title">POS Cepat & Intuitif</h3>
+              <p class="feature-desc">
+                Proses transaksi dalam hitungan detik dengan interface yang
+                mudah digunakan. Mendukung barcode scanner dan multiple payment
+                methods.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-boxes"></i></div>
+              <h3 class="feature-title">Manajemen Stok Real-time</h3>
+              <p class="feature-desc">
+                Pantau stok secara otomatis dengan alert ketika inventory
+                menipis. Kelola produk kadaluarsa dengan mudah.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <h3 class="feature-title">Membership System</h3>
+              <p class="feature-desc">
+                Tingkatkan loyalitas pelanggan dengan tier membership (Bronze,
+                Silver, Gold) dan diskon otomatis.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+              <h3 class="feature-title">Laporan Analitik</h3>
+              <p class="feature-desc">
+                Dashboard interaktif dengan insight penjualan, produk terlaris,
+                dan performa karyawan.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-truck"></i></div>
+              <h3 class="feature-title">Multi Supplier</h3>
+              <p class="feature-desc">
+                Kelola banyak supplier untuk satu produk dengan harga beli yang
+                berbeda. Lacak riwayat pembelian.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="feature-title">Keamanan Data</h3>
+              <p class="feature-desc">
+                Sistem role-based access control dengan enkripsi data. Backup
+                otomatis ke cloud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demo">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Live Demo</span>
+          <h2 class="section-title">Coba BantuKasir Sekarang</h2>
+          <p class="section-subtitle">
+            Rasakan kemudahan sistem POS kami tanpa perlu install aplikasi
+          </p>
+        </div>
+
+        <div class="demo-container">
+          <div class="demo-sidebar">
+            <div class="demo-nav">
+              <button class="demo-nav-item active" data-demo="pos">
+                <i class="fas fa-cash-register"></i>
+                <span>POS Interface</span>
+              </button>
+              <button class="demo-nav-item" data-demo="inventory">
+                <i class="fas fa-boxes"></i>
+                <span>Inventory</span>
+              </button>
+              <button class="demo-nav-item" data-demo="analytics">
+                <i class="fas fa-chart-pie"></i>
+                <span>Analytics</span>
+              </button>
+              <button class="demo-nav-item" data-demo="membership">
+                <i class="fas fa-id-card"></i>
+                <span>Membership</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="demo-display">
+            <div class="demo-screen active" id="demo-pos">
+              <div class="demo-pos-interface">
+                <div class="pos-header">
+                  <div class="pos-brand">BantuKasir POS</div>
+                  <div class="pos-time">15:32:45</div>
+                </div>
+                <div class="pos-body">
+                  <div class="pos-products">
+                    <div class="pos-category">
+                      <button class="pos-cat-btn active">Semua</button>
+                      <button class="pos-cat-btn">Makanan</button>
+                      <button class="pos-cat-btn">Minuman</button>
+                      <button class="pos-cat-btn">Snack</button>
+                    </div>
+                    <div class="pos-grid">
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #fef3c7,
+                              #fde68a
+                            );
+                          "
+                        >
+                          <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <span class="pos-product-name">Roti Tawar</span>
+                        <span class="pos-product-price">Rp 15.000</span>
+                      </div>
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #dbeafe,
+                              #bfdbfe
+                            );
+                          "
+                        >
+                          <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <span class="pos-product-name">Air Mineral</span>
+                        <span class="pos-product-price">Rp 5.000</span>
+                      </div>
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #fce7f3,
+                              #fbcfe8
+                            );
+                          "
+                        >
+                          <i class="fas fa-cookie"></i>
+                        </div>
+                        <span class="pos-product-name">Biskuit</span>
+                        <span class="pos-product-price">Rp 8.500</span>
+                      </div>
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #d1fae5,
+                              #a7f3d0
+                            );
+                          "
+                        >
+                          <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="pos-product-name">Apel Fuji</span>
+                        <span class="pos-product-price">Rp 12.000</span>
+                      </div>
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #fee2e2,
+                              #fecaca
+                            );
+                          "
+                        >
+                          <i class="fas fa-candy-cane"></i>
+                        </div>
+                        <span class="pos-product-name">Permen</span>
+                        <span class="pos-product-price">Rp 3.000</span>
+                      </div>
+                      <div class="pos-product" onclick="addToCart(this)">
+                        <div
+                          class="pos-product-img"
+                          style="
+                            background: linear-gradient(
+                              135deg,
+                              #e0e7ff,
+                              #c7d2fe
+                            );
+                          "
+                        >
+                          <i class="fas fa-soap"></i>
+                        </div>
+                        <span class="pos-product-name">Sabun</span>
+                        <span class="pos-product-price">Rp 7.500</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pos-cart">
+                    <div class="pos-cart-header">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Keranjang</span>
+                      <span class="pos-cart-count" id="cartCount">0 items</span>
+                    </div>
+                    <div class="pos-cart-items" id="cartItems">
+                      <div class="pos-cart-empty">
+                        <i class="fas fa-cart-plus"></i>
+                        <p>Klik produk untuk menambahkan</p>
+                      </div>
+                    </div>
+                    <div class="pos-cart-footer">
+                      <div class="pos-cart-total">
+                        <span>Total</span>
+                        <span id="cartTotal">Rp 0</span>
+                      </div>
+                      <button
+                        class="pos-checkout-btn"
+                        onclick="processPayment()"
+                      >
+                        <i class="fas fa-credit-card"></i>
+                        Bayar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-screen" id="demo-inventory">
+              <div class="demo-inv-interface">
+                <div class="inv-header">
+                  <h3><i class="fas fa-boxes"></i> Manajemen Stok</h3>
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fas fa-plus"></i> Tambah Produk
+                  </button>
+                </div>
+                <div class="inv-stats">
+                  <div class="inv-stat-card">
+                    <span class="inv-stat-value">1,247</span>
+                    <span class="inv-stat-label">Total SKU</span>
+                  </div>
+                  <div class="inv-stat-card warning">
+                    <span class="inv-stat-value">12</span>
+                    <span class="inv-stat-label">Stok Menipis</span>
+                  </div>
+                  <div class="inv-stat-card danger">
+                    <span class="inv-stat-value">3</span>
+                    <span class="inv-stat-label">Kadaluarsa</span>
+                  </div>
+                </div>
+                <div class="inv-table-container">
+                  <table class="inv-table">
+                    <thead>
+                      <tr>
+                        <th>Produk</th>
+                        <th>SKU</th>
+                        <th>Stok</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="inv-product">
+                            <div
+                              class="inv-product-icon"
+                              style="background: #fef3c7"
+                            >
+                              <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <span>Roti Tawar Sari Roti</span>
+                          </div>
+                        </td>
+                        <td>SR-001</td>
+                        <td>45 pcs</td>
+                        <td><span class="inv-status ok">Aman</span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="inv-product">
+                            <div
+                              class="inv-product-icon"
+                              style="background: #fee2e2"
+                            >
+                              <i class="fas fa-wine-bottle"></i>
+                            </div>
+                            <span>Air Mineral 600ml</span>
+                          </div>
+                        </td>
+                        <td>AM-002</td>
+                        <td>8 pcs</td>
+                        <td><span class="inv-status warning">Menipis</span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="inv-product">
+                            <div
+                              class="inv-product-icon"
+                              style="background: #fce7f3"
+                            >
+                              <i class="fas fa-cookie"></i>
+                            </div>
+                            <span>Biskuit Roma Kelapa</span>
+                          </div>
+                        </td>
+                        <td>BR-003</td>
+                        <td>0 pcs</td>
+                        <td><span class="inv-status danger">Habis</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-screen" id="demo-analytics">
+              <div class="demo-analytics-interface">
+                <div class="analytics-header">
+                  <h3><i class="fas fa-chart-line"></i> Analytics Dashboard</h3>
+                  <div class="analytics-period">
+                    <button class="active">Hari Ini</button>
+                    <button>Minggu Ini</button>
+                    <button>Bulan Ini</button>
+                  </div>
+                </div>
+                <div class="analytics-grid">
+                  <div class="analytics-card">
+                    <div class="analytics-card-header">
+                      <span>Revenue</span>
+                      <i
+                        class="fas fa-dollar-sign"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                    <div class="analytics-card-value">Rp 5.2M</div>
+                    <div class="analytics-card-change positive">
+                      <i class="fas fa-arrow-up"></i> +12.5%
+                    </div>
+                  </div>
+                  <div class="analytics-card">
+                    <div class="analytics-card-header">
+                      <span>Transaksi</span>
+                      <i class="fas fa-receipt" style="color: var(--info)"></i>
+                    </div>
+                    <div class="analytics-card-value">142</div>
+                    <div class="analytics-card-change positive">
+                      <i class="fas fa-arrow-up"></i> +8.3%
+                    </div>
+                  </div>
+                  <div class="analytics-card">
+                    <div class="analytics-card-header">
+                      <span>Rata-rata Order</span>
+                      <i
+                        class="fas fa-shopping-basket"
+                        style="color: var(--accent)"
+                      ></i>
+                    </div>
+                    <div class="analytics-card-value">Rp 36.600</div>
+                    <div class="analytics-card-change negative">
+                      <i class="fas fa-arrow-down"></i> -2.1%
+                    </div>
+                  </div>
+                </div>
+                <div class="analytics-chart-placeholder">
+                  <div class="chart-bars">
+                    <div
+                      class="chart-bar"
+                      style="height: 40%"
+                      data-label="Sen"
+                    ></div>
+                    <div
+                      class="chart-bar"
+                      style="height: 65%"
+                      data-label="Sel"
+                    ></div>
+                    <div
+                      class="chart-bar"
+                      style="height: 50%"
+                      data-label="Rab"
+                    ></div>
+                    <div
+                      class="chart-bar"
+                      style="height: 80%"
+                      data-label="Kam"
+                    ></div>
+                    <div
+                      class="chart-bar"
+                      style="height: 70%"
+                      data-label="Jum"
+                    ></div>
+                    <div
+                      class="chart-bar"
+                      style="height: 90%"
+                      data-label="Sab"
+                    ></div>
+                    <div
+                      class="chart-bar active"
+                      style="height: 60%"
+                      data-label="Min"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-screen" id="demo-membership">
+              <div class="demo-member-interface">
+                <div class="member-header">
+                  <h3><i class="fas fa-crown"></i> Membership Program</h3>
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fas fa-plus"></i> Tambah Member
+                  </button>
+                </div>
+                <div class="member-tiers">
+                  <div class="member-tier bronze">
+                    <div class="tier-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Bronze</h4>
+                    <p>0 - 50 poin</p>
+                    <span class="tier-discount">Diskon 2%</span>
+                  </div>
+                  <div class="member-tier silver">
+                    <div class="tier-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Silver</h4>
+                    <p>51 - 200 poin</p>
+                    <span class="tier-discount">Diskon 5%</span>
+                  </div>
+                  <div class="member-tier gold">
+                    <div class="tier-icon"><i class="fas fa-crown"></i></div>
+                    <h4>Gold</h4>
+                    <p>200+ poin</p>
+                    <span class="tier-discount">Diskon 10%</span>
+                  </div>
+                </div>
+                <div class="member-recent">
+                  <h4>Member Terbaru</h4>
+                  <div class="member-list">
+                    <div class="member-item">
+                      <div
+                        class="member-avatar"
+                        style="
+                          background: linear-gradient(135deg, #fbbf24, #f59e0b);
+                        "
+                      >
+                        BS
+                      </div>
+                      <div class="member-info">
+                        <span class="member-name">Budi Santoso</span>
+                        <span class="member-tier-badge gold">Gold</span>
+                      </div>
+                      <span class="member-points">450 pts</span>
+                    </div>
+                    <div class="member-item">
+                      <div
+                        class="member-avatar"
+                        style="
+                          background: linear-gradient(135deg, #94a3b8, #64748b);
+                        "
+                      >
+                        DW
+                      </div>
+                      <div class="member-info">
+                        <span class="member-name">Dewi Wulandari</span>
+                        <span class="member-tier-badge silver">Silver</span>
+                      </div>
+                      <span class="member-points">120 pts</span>
+                    </div>
+                    <div class="member-item">
+                      <div
+                        class="member-avatar"
+                        style="
+                          background: linear-gradient(135deg, #b45309, #92400e);
+                        "
+                      >
+                        AP
+                      </div>
+                      <div class="member-info">
+                        <span class="member-name">Ahmad Pratama</span>
+                        <span class="member-tier-badge bronze">Bronze</span>
+                      </div>
+                      <span class="member-points">35 pts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Pricing</span>
+          <h2 class="section-title">
+            Harga Transparan, Tanpa Biaya Tersembunyi
+          </h2>
+          <p class="section-subtitle">
+            Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Upgrade kapan
+            saja.
+          </p>
+        </div>
+
+        <div class="pricing-toggle">
+          <span class="toggle-label active" id="monthlyLabel">Bulanan</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billingToggle" />
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="yearlyLabel"
+            >Tahunan <span class="toggle-badge">Hemat 20%</span></span
+          >
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Starter</h3>
+              <p class="pricing-desc">
+                Untuk bisnis baru yang mulai berkembang
+              </p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">Rp</span>
+              <span class="amount" data-monthly="299000" data-yearly="239000"
+                >299.000</span
+              >
+              <span class="period">/bulan</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 1 Cabang</li>
+              <li><i class="fas fa-check"></i> 1 Kasir</li>
+              <li><i class="fas fa-check"></i> 100 SKU</li>
+              <li><i class="fas fa-check"></i> Laporan Dasar</li>
+              <li><i class="fas fa-check"></i> Support Email</li>
+              <li class="disabled">
+                <i class="fas fa-times"></i> Multi-payment
+              </li>
+              <li class="disabled"><i class="fas fa-times"></i> Membership</li>
+            </ul>
+            <a href="https://wa.me/6281343509710"><button class="btn btn-secondary btn-block">Mulai Trial</button></a>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="pricing-badge">Paling Populer</div>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Business</h3>
+              <p class="pricing-desc">
+                Untuk minimarket dengan transaksi aktif
+              </p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">Rp</span>
+              <span class="amount" data-monthly="599000" data-yearly="479000"
+                >599.000</span
+              >
+              <span class="period">/bulan</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 3 Cabang</li>
+              <li><i class="fas fa-check"></i> 5 Kasir</li>
+              <li><i class="fas fa-check"></i> 1.000 SKU</li>
+              <li><i class="fas fa-check"></i> Laporan Lengkap</li>
+              <li><i class="fas fa-check"></i> Support 24/7</li>
+              <li><i class="fas fa-check"></i> Multi-payment</li>
+              <li><i class="fas fa-check"></i> Membership Basic</li>
+            </ul>
+            <a href="https://wa.me/6281343509710"><button class="btn btn-primary btn-block">Mulai Trial</button></a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Enterprise</h3>
+              <p class="pricing-desc">Untuk supermarket & multi-cabang besar</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">Rp</span>
+              <span class="amount" data-monthly="1299000" data-yearly="1039000"
+                >1.299.000</span
+              >
+              <span class="period">/bulan</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Unlimited Cabang</li>
+              <li><i class="fas fa-check"></i> Unlimited Kasir</li>
+              <li><i class="fas fa-check"></i> Unlimited SKU</li>
+              <li><i class="fas fa-check"></i> Analytics AI</li>
+              <li><i class="fas fa-check"></i> Dedicated Support</li>
+              <li><i class="fas fa-check"></i> API Access</li>
+              <li><i class="fas fa-check"></i> Custom Integration</li>
+            </ul>
+           <a href="https://wa.me/6281343509710"><button class="btn btn-secondary btn-block" href="https://wa.me/6281343509710">Hubungi Sales</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pos-dashboard" class="pos-dashboard-section">
+      <div class="section-container">
+        <div class="db-header">
+          <div class="db-header-left">
+            <span class="section-tag">Live Dashboard</span>
+            <h2 class="section-title">POS Analytics Overview</h2>
+          </div>
+          <div class="db-filters">
+            <button class="db-filter-btn active" data-range="7d">7 Hari</button>
+            <button class="db-filter-btn" data-range="30d">30 Hari</button>
+            <button class="db-filter-btn" data-range="90d">3 Bulan</button>
+            <div class="db-store-select">
+              <select id="storeFilter">
+                <option value="all">Semua Toko</option>
+                <option value="STORE01">STORE01</option>
+                <option value="STORE02">STORE02</option>
+                <option value="STORE03">STORE03</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="db-stats-grid">
+          <div class="db-stat-card primary">
+            <div class="db-stat-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="db-stat-info">
+              <span class="db-stat-label">Total Revenue</span>
+              <span
+                class="db-stat-value"
+                data-target="6564000"
+                data-prefix="Rp "
+                data-suffix=""
+                >0</span
+              >
+              <span class="db-stat-change positive">
+                <i class="fas fa-arrow-up"></i> +8.2% dari periode lalu
+              </span>
+            </div>
+            <div class="db-stat-chart sparkline" id="revenueSparkline"></div>
+          </div>
+
+          <div class="db-stat-card info">
+            <div class="db-stat-icon">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <div class="db-stat-info">
+              <span class="db-stat-label">Total Transaksi</span>
+              <span
+                class="db-stat-value"
+                data-target="100"
+                data-prefix=""
+                data-suffix=""
+                >0</span
+              >
+              <span class="db-stat-change positive">
+                <i class="fas fa-arrow-up"></i> +8.3% dari periode lalu
+              </span>
+            </div>
+            <div
+              class="db-stat-chart sparkline"
+              id="transactionSparkline"
+            ></div>
+          </div>
+
+          <div class="db-stat-card warning">
+            <div class="db-stat-icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <div class="db-stat-info">
+              <span class="db-stat-label">Total Produk</span>
+              <span
+                class="db-stat-value"
+                data-target="100"
+                data-prefix=""
+                data-suffix=""
+                >0</span
+              >
+              <span class="db-stat-change negative">
+                <i class="fas fa-exclamation-triangle"></i> 5 stok menipis
+              </span>
+            </div>
+            <div class="db-stat-chart sparkline" id="productSparkline"></div>
+          </div>
+
+          <div class="db-stat-card success">
+            <div class="db-stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="db-stat-info">
+              <span class="db-stat-label">Pelanggan Aktif</span>
+              <span
+                class="db-stat-value"
+                data-target="100"
+                data-prefix=""
+                data-suffix=""
+                >0</span
+              >
+              <span class="db-stat-change positive">
+                <i class="fas fa-arrow-up"></i> +15 pelanggan baru
+              </span>
+            </div>
+            <div class="db-stat-chart sparkline" id="customerSparkline"></div>
+          </div>
+        </div>
+
+        <div class="db-charts-row">
+          <div class="db-chart-container large">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-chart-line"></i> Tren Penjualan Harian</h3>
+              <div class="db-chart-legend">
+                <span class="legend-item"
+                  ><span class="dot primary"></span> Revenue</span
+                >
+                <span class="legend-item"
+                  ><span class="dot secondary"></span> Transaksi</span
+                >
+              </div>
+            </div>
+            <div class="db-chart-body">
+              <canvas id="salesTrendChart" height="300"></canvas>
+            </div>
+          </div>
+
+          <div class="db-chart-container">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-chart-pie"></i> Metode Pembayaran</h3>
+            </div>
+            <div class="db-chart-body center">
+              <canvas id="paymentChart" width="280" height="280"></canvas>
+              <div class="db-chart-metrics" id="paymentMetrics"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="db-charts-row">
+          <div class="db-chart-container">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-tags"></i> Penjualan per Kategori</h3>
+            </div>
+            <div class="db-chart-body">
+              <canvas id="categoryChart" height="260"></canvas>
+            </div>
+          </div>
+
+          <div class="db-chart-container">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-trophy"></i> Top 5 Produk Terlaris</h3>
+            </div>
+            <div class="db-chart-body">
+              <div class="db-top-products" id="topProductsList"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="db-tables-row">
+          <div class="db-table-container">
+            <div class="db-table-header">
+              <h3><i class="fas fa-clock"></i> Transaksi Terbaru</h3>
+              <button class="db-table-btn">
+                <i class="fas fa-download"></i> Export
+              </button>
+            </div>
+            <div class="db-table-body">
+              <table class="db-data-table" id="recentTransactionsTable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Waktu</th>
+                    <th>Pelanggan</th>
+                    <th>Kasir</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="db-table-container">
+            <div class="db-table-header">
+              <h3><i class="fas fa-bell"></i> Alert Stok Menipis</h3>
+              <span class="db-badge alert">5 Items</span>
+            </div>
+            <div class="db-table-body">
+              <table class="db-data-table compact" id="lowStockTable">
+                <thead>
+                  <tr>
+                    <th>Produk</th>
+                    <th>SKU</th>
+                    <th>Stok</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="db-charts-row">
+          <div class="db-chart-container">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-store"></i> Performa per Cabang</h3>
+            </div>
+            <div class="db-chart-body">
+              <div class="db-store-cards" id="storeCards"></div>
+            </div>
+          </div>
+
+          <div class="db-chart-container">
+            <div class="db-chart-header">
+              <h3><i class="fas fa-user-tie"></i> Top Performer Karyawan</h3>
+            </div>
+            <div class="db-chart-body">
+              <div class="db-employee-rank" id="employeeRank"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">Cerita Sukses Pelanggan Kami</h2>
+          <p class="section-subtitle">
+            Lihat bagaimana BantuKasir membantu bisnis retail tumbuh lebih cepat
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card featured">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "BantuKasir mengubah cara kami berbisnis. Dari yang manual
+              sekarang mayoritas serba otomatis. Keuntungan naik 40% dalam 6 bulan!"
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="author-avatar"
+                style="background: linear-gradient(135deg, #10b981, #059669)"
+              >
+                BS
+              </div>
+              <div class="author-info">
+                <h4>Budi Santoso</h4>
+                <span>Owner, Minimart Sejahtera</span>
+              </div>
+            </div>
+            <div class="testimonial-metrics">
+              <div class="metric">
+                <span class="metric-value">+40%</span>
+                <span class="metric-label">Revenue</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">5</span>
+                <span class="metric-label">Cabang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Sistem stok real-time sangat membantu kelancaran sistem beroperasi.
+              Kami bisa lacak tanggal kadaluarsa dengan presisi tinggi."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="author-avatar"
+                style="background: linear-gradient(135deg, #f59e0b, #ef4444)"
+              >
+                DW
+              </div>
+              <div class="author-info">
+                <h4>Dewi Wulandari</h4>
+                <span>Owner, Fresh Market 24</span>
+              </div>
+            </div>
+            <div class="testimonial-metrics">
+              <div class="metric">
+                <span class="metric-value">-30%</span>
+                <span class="metric-label">Waste</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">12</span>
+                <span class="metric-label">Cabang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Multi-supplier feature sangat powerful. Kami bisa compare harga
+              dan pilih supplier terbaik otomatis. Support team sangat
+              responsif."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="author-avatar"
+                style="background: linear-gradient(135deg, #3b82f6, #1d4ed8)"
+              >
+                AP
+              </div>
+              <div class="author-info">
+                <h4>Ahmad Pratama</h4>
+                <span>Owner, Super Grosir</span>
+              </div>
+            </div>
+            <div class="testimonial-metrics">
+              <div class="metric">
+                <span class="metric-value">-15%</span>
+                <span class="metric-label">Cost</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">50+</span>
+                <span class="metric-label">Supplier</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-stats">
+          <div class="t-stat">
+            <span class="t-stat-number">4.9/5</span>
+            <span class="t-stat-label">Rating Pelanggan</span>
+            <div class="t-stat-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="t-stat">
+            <span class="t-stat-number">500+</span>
+            <span class="t-stat-label">Bisnis Aktif</span>
+          </div>
+          <div class="t-stat">
+            <span class="t-stat-number">98%</span>
+            <span class="t-stat-label">Tingkat Retensi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Tim Kami</span>
+          <h2 class="section-title">Kenali Tim di Balik BantuKasir</h2>
+          <p class="section-subtitle">
+            Para pengembang dan desainer yang berdedikasi membangun solusi
+            retail terbaik.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="assets/image/profile-Garren.jpg" alt="Garren" />
+            </div>
+            <div class="team-info">
+              <h3>Garren</h3>
+              <span class="team-role">Database Developer</span>
+              <p>
+                Merancang, mengelola, dan mengoptimalkan struktur basis data
+                serta memastikan keamanan dan efisiensi akses data.
+              </p>
+              <div class="team-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="assets/image/profile-Kessie.jpeg" alt="Kessie" />
+            </div>
+            <div class="team-info">
+              <h3>Kessie</h3>
+              <span class="team-role">UI/UX Designer</span>
+              <p>
+                Mendesain antarmuka pengguna yang intuitif dan pengalaman
+                interaktif yang mulus untuk sistem POS.
+              </p>
+              <div class="team-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="assets/image/profile-Samuel.jpeg" alt="Samuel" />
+            </div>
+            <div class="team-info">
+              <h3>Samuel</h3>
+              <span class="team-role">Design System Developer</span>
+              <p>
+                Membangun infrastruktur database dan memastikan sinkronisasi
+                data transaksi yang aman.
+              </p>
+              <div class="team-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="assets/image/profile-Carlos.jpeg" alt="Carlos" />
+            </div>
+            <div class="team-info">
+              <h3>Carlos</h3>
+              <span class="team-role">Blog Writer & Web Designer</span>
+              <p>
+                Penulis blog dan menerjemahkan desain visual menjadi kode
+                fungsional yang responsif dan interaktif.
+              </p>
+              <div class="team-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="assets/image/profile-Kenneth.jpeg" alt="Kenneth" />
+            </div>
+            <div class="team-info">
+              <h3>Kenneth</h3>
+              <span class="team-role">Design System Developer</span>
+              <p>
+                Merancang, mengelola, dan mengoptimalkan struktur basis data
+                serta memastikan keamanan dan efisiensi akses data.
+              </p>
+              <div class="team-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Pertanyaan yang Sering Ditanyakan</h2>
+          <p class="section-subtitle">
+            Temukan jawaban atas pertanyaan umum tentang BantuKasir
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-number">01</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-exchange-alt faq-icon"></i>
+                <span>Bagaimana cara migrasi dari sistem POS lama?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tim kami menyediakan layanan migrasi data gratis. Kami akan
+                membantu memindahkan data produk, stok, dan member dari sistem
+                lama Anda ke BantuKasir tanpa kehilangan data.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-number">02</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-wifi faq-icon"></i>
+                <span>Apakah BantuKasir bisa digunakan offline?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ya! BantuKasir memiliki mode offline yang memungkinkan Anda
+                tetap bertransaksi meski internet terputus. Data akan otomatis
+                sync ketika koneksi kembali stabil.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-number">03</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-tools faq-icon"></i>
+                <span>Berapa lama setup dan implementasi?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Untuk bisnis kecil-menengah, setup bisa selesai dalam 1-2 hari.
+                Untuk enterprise dengan multi-cabang, implementasi biasanya
+                memakan waktu 1-2 minggu termasuk training staff.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-number">04</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-tags faq-icon"></i>
+                <span>Apakah ada biaya maintenance bulanan?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Biaya subscription sudah termasuk maintenance, update fitur, dan
+                support 24/7. Tidak ada biaya tersembunyi. Harga mulai dari Rp
+                299.000/bulan.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-number">05</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-shield-alt faq-icon"></i>
+                <span>Bagaimana dengan keamanan data saya?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Data Anda dienkripsi dengan standar bank-grade AES-256. Backup
+                otomatis ke cloud setiap hari. Kami juga compliant dengan
+                standar PCI DSS untuk transaksi kartu.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-number">06</div>
+            <button class="faq-question">
+              <div class="faq-q-wrap">
+                <i class="fas fa-plug faq-icon"></i>
+                <span>Apakah bisa integrate dengan aplikasi akuntansi?</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                BantuKasir bisa terintegrasi dengan Accurate, Jurnal,
+                QuickBooks, dan aplikasi akuntansi populer lainnya melalui API
+                kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Blog</span>
+          <h2 class="section-title">Artikel & Tips untuk Bisnis Retail</h2>
+          <p class="section-subtitle">
+            Insight, panduan, dan best practices seputar POS, stok, dan
+            operasional.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img
+                src="assets/image/Picture1.jpg"
+                alt="Kesalahan Manajemen Stok UMKM"
+              />
+            </div>
+            <div class="blog-body">
+              <h3>Kesalahan Manajemen Stok UMKM dan Solusi Digital</h3>
+              <p>
+                Manajemen stok masih menjadi tantangan bagi banyak pelaku UMKM.
+                Kesalahan sering terjadi karena pencatatan yang tidak konsisten
+                dan masih dilakukan secara manual, sehingga data stok tidak
+                sesuai dengan kondisi sebenarnya.
+              </p>
+              <a class="read-more" href="article-1.html"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img
+                src="assets/image/Picture3.jpg"
+                alt="Cara POS Mencegah Kecurangan Karyawan"
+              />
+            </div>
+            <div class="blog-body">
+              <h3>Cara POS Membantu Mencegah Kecurangan Karyawan</h3>
+              <p>
+                Mengelola bisnis restoran atau retail tidak hanya soal
+                penjualan, tetapi juga menjaga kepercayaan dalam tim. Salah satu
+                tantangan yang sering terjadi adalah kecurangan karyawan yang
+                dapat menyebabkan kerugian besar.
+              </p>
+              <a class="read-more" href="article-2.html"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img
+                src="assets/image/Picture5.jpg"
+                alt="Pentingnya Menggunakan Sistem POS untuk Retail"
+              />
+            </div>
+            <div class="blog-body">
+              <h3>Pentingnya Menggunakan Sistem POS untuk Bisnis Retail</h3>
+              <p>
+                Menjalankan bisnis retail tanpa sistem yang terstruktur dapat
+                menimbulkan berbagai kendala, terutama dalam proses transaksi,
+                pencatatan penjualan, dan pengelolaan stok barang.
+              </p>
+              <a class="read-more" href="article-3.html"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img
+                src="assets/image/Picture7.jpg"
+                alt="Keuntungan Menggunakan POS untuk UMKM"
+              />
+            </div>
+            <div class="blog-body">
+              <h3>Keuntungan Menggunakan POS untuk UMKM</h3>
+              <p>
+                Di era digital saat ini, UMKM dituntut untuk beradaptasi dengan
+                teknologi agar tetap mampu bersaing. Salah satu solusi yang
+                banyak digunakan adalah sistem POS yang membantu pelaku usaha
+                mengelola operasional bisnis secara lebih efisien.
+              </p>
+              <a class="read-more" href="article-4.html"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img
+                src="assets/image/Picture9.jpg"
+                alt="Pentingnya Supplier Management untuk UMKM"
+              />
+            </div>
+            <div class="blog-body">
+              <h3>Pentingnya Supplier Management untuk UMKM</h3>
+              <p>
+                Hubungan dengan supplier menjadi salah satu faktor penting yang
+                menentukan kelancaran operasional. Supplier management membantu
+                menjaga keandalan pasokan dan stabilitas stok bagi bisnis retail
+                dan supermarket.
+              </p>
+              <a class="read-more" href="article-5.html"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img
+              src="assets/image/logo-bantukasir-with-text.png"
+              alt="BantuKasir"
+              class="footer-logo-img"
+            />
+          </div>
+          <p>
+            Sistem POS modern untuk supermarket dan minimarket. Solusi lengkap
+            untuk mengelola bisnis retail Anda dengan lebih efisien.
+          </p>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>hello@bantukasir.id</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+62 812-3456-7890</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="#demo">POS System</a></li>
+            <li><a href="#business-types">Jenis Usaha</a></li>
+            <li><a href="#pos-dashboard">Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href=#team>Tentang Kami</a></li>
+            <li><a href=#blog>Blog</a></li>
+            <li><a href="https://wa.me/6281343509710">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Bantuan</h4>
+          <ul>
+            <li><a href=#faq>FAQ</a></li>
+            <li><a href="https://wa.me/6281343509710">Support</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 BantuKasir. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
+        <div class="social-links">
+          <a href="https://wa.me/6281343509710"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/hmpssi_uph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/6281343509710"
+      class="whatsapp-sticky"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">Chat dengan kami</span>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
